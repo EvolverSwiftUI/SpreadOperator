@@ -49,3 +49,32 @@ Function Calls
 // ------------------------------------
 // rest operator
 
+function numbersFunc(...args) {
+    console.log(args);
+}
+
+numbersFunc(1,2,3);
+numbersFunc(1,2,3,4,5,6,7,8);
+
+function numbersFunc2(a,b,...rest) {
+    console.log(a);
+    console.log(b);
+    console.log(rest);
+}
+
+numbersFunc2(1,2,3,4,5,6,7,8);
+
+function sum(...args) {
+    let result = 0;
+    for( let arg of args) {
+        result = result + arg;
+    }
+    console.log(result);
+}
+
+sum(1,2,3);
+sum(1,2,3,4,5,6,7,8,9,10);
+
+// Destructuring Arrays and Objects 
+// with rest parameter syntax
+
