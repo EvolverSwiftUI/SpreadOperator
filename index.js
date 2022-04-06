@@ -78,3 +78,41 @@ sum(1,2,3,4,5,6,7,8,9,10);
 // Destructuring Arrays and Objects 
 // with rest parameter syntax
 
+// Apply on Array
+let [a,b,c] = [1,2,3];
+console.log(a);
+console.log(b);
+console.log(c);
+
+let [d,e,...rest] = [1,2,3,4,5,6];
+console.log(d);
+console.log(e);
+console.log(rest);
+
+// Destructuring on Object
+let {firstName, ...rest1} = {
+    firstName: "Sivaram",
+    lastName: "Yadav",
+    age: 30
+};
+
+console.log(firstName);
+console.log(rest1);
+
+// Default Parameters
+
+function numbersFunc3(a=2, b=4) {
+    console.log(a);
+    console.log(b);
+}
+// if we don't pass
+// it will take default values
+numbersFunc3();
+
+// if we pass it will take the
+// passed params
+numbersFunc3(9,10);
+numbersFunc3(1);
+
+// Template Literals (Template Strings)
+
