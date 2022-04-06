@@ -115,4 +115,41 @@ numbersFunc3(9,10);
 numbersFunc3(1);
 
 // Template Literals (Template Strings)
+/* 
+    template literals are enclosed by backticks.
+    syntax:
+    `some text ${expression} some text`
 
+    They are used to:
+    1. Embed variables or expressions in the string
+    2. Write multi-line strings
+*/
+
+let nameStr = "Sivaram";
+console.log(`My name is ${nameStr}`);
+
+let result = `The sum of 4 and 5 is ${4 + 5}`;
+console.log(result);
+
+let person2 = {name: "Sivaram"};
+console.log(`My name is ${person2.name}`);
+
+// Multi-line string
+let greet = `Hello, how are you doing Mr. ${person2.name}
+and I hope every one doing well at the other side.
+That's what makes us so happy and joyful.
+`
+console.log(greet);
+
+// Summary:
+/*
+1. Spread Operator
+    1.1. Arrays
+    1.2. Objects
+    1.3. Function calls
+2. Rest Parameter
+    2.1. Destructing Arrays and Objects
+3. Functions
+    3.1. Default parameters
+4. Template Literals or String Literals            
+*/
